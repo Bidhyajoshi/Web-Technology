@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Admission Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button onclick="showTab('login')" id="loginTab">Login</button>
+        <button onclick="showTab('register')" id="registerTab" class="active">Register</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="login" class="form">
+        <h2>Student Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMsg"></p>
+    </div>
+
+    <!-- REGISTER -->
+    <div id="register" class="form active">
+        <h2>College Admission Form</h2>
+
+        <!-- Personal Info -->
+        <h3>Personal Details</h3>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="date" id="dob">
+        <select id="gender">
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <!-- Contact -->
+        <h3>Contact Details</h3>
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <!-- Address -->
+        <h3>Address</h3>
+        <input type="text" id="address" placeholder="Address">
+        <input type="text" id="city" placeholder="City">
+        <input type="text" id="state" placeholder="State">
+
+        <!-- Academic -->
+        <h3>Academic Details</h3>
+        <input type="text" id="school" placeholder="School Name">
+        <input type="number" id="marks" placeholder="12th Percentage">
+        <select id="course">
+            <option value="">Select Course</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>BBA</option>
+        </select>
+
+        <!-- Parent -->
+        <h3>Parent Details</h3>
+        <input type="text" id="father" placeholder="Father Name">
+        <input type="text" id="mother" placeholder="Mother Name">
+
+        <!-- Password -->
+        <h3>Security</h3>
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+        <button onclick="register()">Submit Application</button>
+        <p id="registerMsg"></p>
+    </div>
+
+    <!-- REVIEW -->
+    <div id="review" class="form">
+        <h2>Application Preview</h2>
+        <div id="output"></div>
+        <button onclick="goBack()">Edit</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
