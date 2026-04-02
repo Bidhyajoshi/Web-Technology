@@ -1,0 +1,65 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+.container {
+    width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px gray;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* RADIO FIX */
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group input {
+    width: auto;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #2575fc;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
